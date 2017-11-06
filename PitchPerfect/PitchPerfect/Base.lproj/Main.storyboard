@@ -72,7 +72,6 @@
                     <view key="view" contentMode="scaleToFill" id="P2j-vE-LsV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.49919140490000002" green="0.51372641959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="3dc-gL-2Y5"/>
                     </view>
                 </viewController>
