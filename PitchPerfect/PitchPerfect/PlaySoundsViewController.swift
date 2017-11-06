@@ -11,6 +11,7 @@ import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
     
+    //MARK: - Properties
     @IBOutlet weak var snailButton: UIButton!
     @IBOutlet weak var chipmunkButton: UIButton!
     @IBOutlet weak var rabbitButton: UIButton!
@@ -19,21 +20,23 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    // Properties initialized used in the PlaySoundsVC extension class
     var recordedAudioURL: URL!
     var audioFile: AVAudioFile!
     var audioEngine: AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
     
+    //MARK: - ButtonType
     enum ButtonType: Int {
         case slow = 0, fast, chipmunk, vader, echo, reverb
     }
     
+    //MARK: - PlaySoundForButton
     @IBAction func playSoundForButton(_ sender: UIButton) {
         switch(ButtonType(rawValue: sender.tag)!){
         case .slow:
             playSound(rate: 0.5)
-        
         case .fast:
             playSound(rate: 1.5)
         case .chipmunk:
