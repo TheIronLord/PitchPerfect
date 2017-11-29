@@ -1,6 +1,7 @@
 # PitchPerfect
 
-Pitch Perfect records your voice and then gives you options on how you want to manipulate it
+## Repo Summary
+Pitch Perfect manipulates recordings to fast and slow speed, high and low pitch, and echo and non-echo.
 
 ![Main Image](Images/MainImage.png)
 
